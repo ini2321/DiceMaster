@@ -1,0 +1,1455 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DiceMaster
+{
+    internal class FlagTranslations
+    {
+        // 자동 생성된 플래그 번역 switch 문 (DevNote 기준)
+        // TODO: 각 중국어 DevNote에 맞는 한글 번역을 직접 입력해야 합니다.
+        public static string TranslateDevNote(string mydevnote, int myvalue)
+        {
+        string id = mydevnote;
+        string mydesc = "";
+
+        switch (mydevnote) { 
+            case "旗標暫存1": // ID: A00001 (및 E30001, Kitchen_Work_M_02, Kitchen_Work_M_03, S0023_01, Shop_01, Talk_Brother3_07_01, Talk_Brother3_07_02, Talk_Brother3_08_01, Talk_Girl_05_11_001, Z00001)
+                id = ""; break;
+            case "旗標暫存2": // ID: A00002
+                id = ""; break;
+            case "旗標暫存3": // ID: A00003
+                id = ""; break;
+            case "旗標暫存4": // ID: A00004
+                id = ""; break;
+            case "旗標暫存5": // ID: A00005
+                id = ""; break;
+            case "旗標暫存6": // ID: A00006
+                id = ""; break;
+            //위 케이스들은 저장 플래그들이라 공백으로 처리 - 출력안함
+            case "任務行動次數檢查": // ID: ActionCheck01
+                id = "임무 행동 횟수 검사"; break;
+            case "後山挑戰龍湘次數": // ID: Back_02_501_01
+                id = "뒷산 용상 도전 횟수"; break;
+            case "觸發登崖眺望": // ID: Back_Work_M_02
+                id = "절벽 오르기 조망 발동"; break;
+            case "通用戰役結果": // ID: BattleResult_001
+                id = "공통 전역 결과"; break;
+            case "通用決鬥成敗": // ID: C00000
+                id = "공통 결투 성공/실패"; break;
+            case "煎藥決鬥大師兄成敗": // ID: C00001
+                id = "약 달이기 대사형 결투 성공/실패"; break;
+            case "決鬥龍大俠成敗": // ID: C00002
+                id = "용대협 결투 성공/실패"; break;
+            case "決鬥萬里鵬程 - 使用回合次數結果": // ID: C00003
+                id = "만리붕정 결투 - 사용 턴 횟수 결과"; break;
+            case "決鬥閻關三煞成敗": // ID: C00004
+                id = "염관삼살 결투 성공/실패"; break;
+            case "毛二壯決鬥結果": // ID: C00005
+                id = "왕이장 결투 결과"; break;
+            case "小梅練武場決鬥次數": // ID: C30000
+                id = "소매 연무장 결투 횟수"; break;
+            case "練武場團隊次數": // ID: Center_Free_01
+                id = "연무장 단체 훈련 횟수"; break;
+            // case "\\n": // ID: Ch_0_M_Option_02, Ch_0_M_Option_03, Ch_0_M_Option_04, S9906_01, S9906_01_Option_01, S9906_01_Option_02, S9906_01_Option_03, S9906_01_Option_04 - 삭제 (의미 없음)
+            case "劇本1-4-3-5 選擇「沒錯，我就是葉雲舟。」": // ID: D00001
+                id = "시나리오 1-4-3-5 「그래, 내가 바로 엽운주다.」 선택"; break;
+            case "試玩版": // ID: Demo
+                id = "체험판"; break;
+            case "出門採買發生成功次數": // ID: Door_Work_S_01
+                id = "외출 구매 성공 횟수"; break;
+            case "招募弟子遇見飛石幫被毆打一頓": // ID: E00001
+                id = "제자 모집 중 비석방 조우 후 구타당함"; break;
+            case "葉雲舟0號線，亂拳打死閻關三煞": // ID: E00002
+                id = "엽운주 0번 루트, 난권으로 염관삼살 격살"; break;
+            case "與飛石幫和解": // ID: E00003
+                id = "비석방과 화해"; break;
+            case "曾跟劉顎一起襲擊南嵩山": // ID: E00004
+                id = "일찍이 유악과 함께 남숭산 습격"; break;
+            case "點蒼劍鬼": // ID: E00005
+                id = "점창 검귀"; break;
+            case "葉雲裳病情": // ID: E00006
+                id = "엽운상 병세"; break;
+            case "飛石幫來訪時選擇招待": // ID: E00007
+                id = "비석방 방문 시 접대 선택"; break;
+            case "曾經被嵩山派抓走": // ID: E00008
+                id = "일찍이 숭산파에 잡혀감"; break;
+            case "辣眼郎中": // ID: E00009
+                id = "날안낭중"; break;
+            case "李大夫對你友善": // ID: E00010
+                id = "이 의원이 당신에게 우호적임"; break;
+            case "龍湘欠你一頓飯": // ID: E00011
+                id = "용상이 당신에게 밥 한 끼 빚짐"; break;
+            case "打算還龍湘錢": // ID: E00012
+                id = "용상에게 돈을 갚을 생각임"; break;
+            case "大師兄不在唐門": // ID: E10000
+                id = "대사형 당문 부재중"; break;
+            case "二師兄不在唐門": // ID: E10001
+                id = "이사형 당문 부재중"; break;
+            case "三師兄為代掌門": // ID: E10002
+                id = "삼사형 장문 대리"; break;
+            case "掌門人不在唐門": // ID: E10003
+                id = "장문인 당문 부재중"; break;
+            case "小師妹不在唐門": // ID: E10004
+                id = "소사매 당문 부재중"; break;
+            case "四師兄不在唐門": // ID: E10005
+                id = "사사형 당문 부재중"; break;
+            case "三師兄不在唐門": // ID: E10006
+                id = "삼사형 당문 부재중"; break;
+            case "主角不在唐門": // ID: E11000
+                id = "주인공 당문 부재중"; break;
+            case "葉雲裳在唐門": // ID: E12000
+                id = "엽운상 당문 체류 중"; break;
+            case "上官螢在唐門": // ID: E12001
+                id = "상관형 당문 체류 중"; break;
+            case "小菊在唐門": // ID: E12002
+                id = "소국 당문 체류 중"; break;
+            case "小梅在唐門": // ID: E12003
+                id = "소매 당문 체류 중"; break;
+            case "小竹在唐門": // ID: E12004
+                id = "소죽 당문 체류 중"; break;
+            case "龍湘在唐門": // ID: E12005
+                id = "용상 당문 체류 중"; break;
+            case "小蘭在唐門": // ID: E12006
+                id = "소란 당문 체류 중"; break;
+            case "葉雲舟在唐門": // ID: E12100
+                id = "엽운주 당문 체류 중"; break;
+            case "假趙活在唐門": // ID: E12101
+                id = "가짜 조활 당문 체류 중"; break;
+            case "馬富貴在唐門": // ID: E12102
+                id = "마부귀 당문 체류 중"; break;
+            case "福韞在唐門": // ID: E12103
+                id = "복온 당문 체류 중"; break;
+            case "畫中仙在唐門": // ID: E12104
+                id = "화중선 당문 체류 중"; break;
+            case "唐衫在唐門": // ID: E12105
+                id = "당삼 당문 체류 중"; break;
+            case "葉雲裳曾經在唐門": // ID: E12200
+                id = "엽운상 과거 당문 체류"; break;
+            case "收留小梅": // ID: E13001
+                id = "소매를 거둠"; break;
+            case "唐大鯨加入唐門": // ID: E13002
+                id = "당대경 당문 가입"; break;
+            case "唐嬌嬌加入唐門": // ID: E13003
+                id = "당교교 당문 가입"; break;
+            case "收留小竹": // ID: E13004
+                id = "소죽을 거둠"; break;
+            case "唐杉加入唐門": // ID: E13005
+                id = "당삼 당문 가입"; break;
+            case "唐衫正式加入唐門": // ID: E13006
+                id = "당삼 정식으로 당문 가입"; break;
+            case "樊嘯天加入唐門": // ID: E13007
+                id = "번소천 당문 가입"; break;
+            case "龍湘加入唐門": // ID: E13008
+                id = "용상 당문 가입"; break;
+            case "葉雲舟加入唐門": // ID: E13009
+                id = "엽운주 당문 가입"; break;
+            case "福韞加入唐門": // ID: E13010
+                id = "복온 당문 가입"; break;
+            case "馬富貴加入唐門": // ID: E13011
+                id = "마부귀 당문 가입"; break;
+            case "解無塵加入唐門": // ID: E13012
+                id = "해무진 당문 가입"; break;
+            case "丹霞子加入唐門": // ID: E13013
+                id = "단하자 당문 가입"; break;
+            case "葉雲裳死亡": // ID: E14000
+                id = "엽운상 사망"; break;
+            case "福韞死亡": // ID: E14001
+                id = "복온 사망"; break;
+            case "小蘭死亡": // ID: E14002
+                id = "소란 사망"; break;
+            case "釋明死亡": // ID: E14003
+                id = "석명 사망"; break;
+            case "是否有捉譚霸刀": // ID: E20001
+                id = "담패도를 잡았는지 여부"; break;
+            case "口嚼茶": // ID: E20002
+                id = "입으로 씹은 차"; break;
+            case "揍過方震天": // ID: E20003
+                id = "방진천을 팬 적 있음"; break;
+            case "支線：乞丐與和尚完成": // ID: E20004
+                id = "서브퀘스트: 거지와 중 완료"; break;
+            case "揍福韞": // ID: E20005
+                id = "복온을 팸"; break;
+            case "樊嘯天拜師夏侯蘭": // ID: E21001
+                id = "번소천 하후란에게 배사"; break;
+            case "支線：萬壽屍心丹完成": // ID: E21002
+                id = "서브퀘스트: 만수시심단 완료"; break;
+            case "六道之緣・畜生": // ID: E21003
+                id = "육도의 연・축생"; break;
+            case "支線：小竹回家完成": // ID: E21004
+                id = "서브퀘스트: 소죽의 귀가 완료"; break;
+            case "葉雲裳專屬的隱藏屬性，會決定她看待主角的角度": // ID: G00001
+                id = "엽운상 전용 숨겨진 속성, 주인공을 보는 그녀의 관점을 결정함"; break;
+            case "小師妹對你的信賴度": // ID: G00002
+                id = "소사매의 당신에 대한 신뢰도"; break;
+            case "大師兄對龍湘的好感\n最終決定大師兄會否和龍湘在一起。\r": // ID: G00003
+                //id = "대사형의 용상에 대한 호감도\\n최종적으로 대사형이 용상과 이어질지 여부를 결정.\\r\\n=0，주인공이 용상을 공략하지 않으면, 용상이 대사형을 따라다님\\r\\n=1，주인공이 용상을 공략하면, 대사형이 양보함\\r\\n=2，주인공이 용상을 공략하면, 대사형이 당신과 결투함"; break;
+                switch (myvalue)
+                {
+                    case 0: mydesc = "주인공이 용상을 공략하지 않으면, 용상이 대사형을 따라다님"; break;
+                    case 1: mydesc = "주인공이 용상을 공략하면, 대사형이 양보함"; break;
+                    case 2: mydesc = "주인공이 용상을 공략하면, 대사형이 당신과 결투함"; break;
+                }
+                id = $"대사형의 용상에 대한 호감도\n최종적으로 대사형이 용상과 이어질지 여부를 결정({mydesc})\r\n"; break;
+            case "向龍湘告白": // ID: G00004
+                id = "용상에게 고백"; break;
+            case "已經認識上官螢": // ID: G10001
+                id = "이미 상관형을 알고 있음"; break;
+            case "認識葉雲裳": // ID: G10002
+                id = "엽운상을 알고 있음"; break;
+            case "認識龍湘": // ID: G10003
+                id = "용상을 알고 있음"; break;
+            case "認識小梅": // ID: G10004
+                id = "소매를 알고 있음"; break;
+            case "認識小蘭": // ID: G10005
+                id = "소란을 알고 있음"; break;
+            case "認識小竹": // ID: G10006
+                id = "소죽을 알고 있음"; break;
+            case "認識小菊": // ID: G10007
+                id = "소국을 알고 있음"; break;
+            case "認識瑞杏": // ID: G10008
+                id = "서행을 알고 있음"; break;
+            case "攻略小師妹": // ID: G11000
+                id = "소사매 공략"; break;
+            case "攻略上官螢": // ID: G11001
+                id = "상관형 공략"; break;
+            case "攻略葉雲裳": // ID: G11002
+                id = "엽운상 공략"; break;
+            case "攻略龍湘": // ID: G11003
+                id = "용상 공략"; break;
+            case "攻略小梅": // ID: G11004
+                id = "소매 공략"; break;
+            case "攻略小蘭": // ID: G11005
+                id = "소란 공략"; break;
+            case "攻略小竹": // ID: G11006
+                id = "소죽 공략"; break;
+            case "攻略小菊": // ID: G11007
+                id = "소국 공략"; break;
+            case "攻略瑞杏": // ID: G11008
+                id = "서행 공략"; break;
+            case "變心次數": // ID: G20000
+                id = "변심 횟수"; break;
+            case "認識瑞笙\\n": // ID: G30000
+                id = "서생을 알고 있음\\n"; break;
+            case "認識劉顎": // ID: G30001
+                id = "유악을 알고 있음"; break;
+            case "認識解無塵": // ID: G30002
+                id = "해무진을 알고 있음"; break;
+            case "認識申屠龍": // ID: G30003
+                id = "신도룡을 알고 있음"; break;
+            case "認識千面人魔": // ID: G30004
+                id = "천면인마를 알고 있음"; break;
+            case "認識葉雲舟": // ID: G30005
+                id = "엽운주를 알고 있음"; break;
+            case "認識宋悲": // ID: G30006
+                id = "송비를 알고 있음"; break;
+            case "認識龍淵": // ID: G30007
+                id = "용연을 알고 있음"; break;
+            case "認識丹霞子": // ID: G30008
+                id = "단하자를 알고 있음"; break;
+            case "認識樊嘯天": // ID: G30009
+                id = "번소천을 알고 있음"; break;
+            case "認識毛二壯": // ID: G30010
+                id = "왕이장을 알고 있음"; break;
+            case "認識萬里鵬程": // ID: G30011
+                id = "만리붕정을 알고 있음"; break;
+            case "認識福韞": // ID: G30012
+                id = "복온을 알고 있음"; break;
+            case "認識馬富貴": // ID: G30013
+                id = "마부귀를 알고 있음"; break;
+            case "青城派好感度": // ID: H00001
+                id = "청성파 호감도"; break;
+            case "全真教好感度": // ID: H00002
+                id = "전진교 호감도"; break;
+            case "峨嵋派好感度": // ID: H00003
+                id = "아미파 호감도"; break;
+            case "崆峒派好感度": // ID: H00004
+                id = "공동파 호감도"; break;
+            case "嵩山派好感度": // ID: H00005
+                id = "숭산파 호감도"; break;
+            case "點蒼派好感度": // ID: H00006
+                id = "점창파 호감도"; break;
+            case "南宮世家好感度": // ID: H01001
+                id = "남궁세가 호감도"; break;
+            case "錦香宮好感度": // ID: H01002
+                id = "금향궁 호감도"; break;
+            case "上官世家好感度": // ID: H01003
+                id = "상관세가 호감도"; break;
+            case "丐幫好感度": // ID: H02001
+                id = "개방 호감도"; break;
+            case "飛石幫好感度": // ID: H02002
+                id = "비석방 호감도"; break;
+            case "泥教好感度": // ID: H02003
+                id = "니교 호감도"; break;
+            case "天道": // ID: H03001
+                id = "천도"; break;
+            case "餓鬼道": // ID: H03002
+                id = "아귀도"; break;
+            case "地獄道": // ID: H03003
+                id = "지옥도"; break;
+            case "畜生道": // ID: H03004
+                id = "축생도"; break;
+            case "人道": // ID: H03005
+                id = "인간도"; break;
+            case "修羅道": // ID: H03006
+                id = "수라도"; break;
+            case "千面人魔好感度": // ID: H04001
+                id = "천면인마 호감도"; break;
+            case "唐嬌嬌好感": // ID: H04002
+                id = "당교교 호감"; break;
+            case "進入葉雲舟0號線": // ID: M00001
+                id = "엽운주 0번 루트 진입"; break;
+            case "見石公遠，幫大師兄說話": // ID: M00002
+                id = "석공원을 만나 대사형을 변호함"; break;
+            case "提及過樊嘯天": // ID: M00003
+                id = "번소천을 언급한 적 있음"; break;
+            case "打劫山賊": // ID: M00004
+                id = "산적 약탈"; break;
+            case "亂畫圖賣給耕陽讀書齋": // ID: M00005
+                id = "그림을 아무렇게나 그려 경양독서재에 판매"; break;
+            case "二師兄擔任考官次數": // ID: M00006
+                id = "이사형 시험관 담당 횟수"; break;
+            case "三師兄擔任考官次數": // ID: M00007
+                id = "삼사형 시험관 담당 횟수"; break;
+            case "段考勝利次數": // ID: M00008
+                id = "단련 시험 승리 횟수"; break;
+            case "上次段考決鬥敗北": // ID: M00009
+                id = "지난 단련 시험 결투 패배"; break;
+            case "上官螢曾被夏侯蘭綁架": // ID: M00010
+                id = "상관형, 하후란에게 납치된 적 있음"; break;
+            case "雪山飛鴻爪": // ID: M00011
+                id = "설산비홍조"; break;
+            case "揍假趙活": // ID: M00012
+                id = "가짜 조활을 팸"; break;
+            case "屍弟": // ID: M00013
+                id = "시제"; break;
+            case "亂丟垃圾": // ID: M00014
+                id = "쓰레기 무단 투기"; break;
+            case "葉雲舟 木劍": // ID: M00015
+                id = "엽운주 목검"; break;
+            case "曾戰勝過龍湘": // ID: M00016
+                id = "일찍이 용상에게 승리한 적 있음"; break;
+            case "曾戰勝過解無塵": // ID: M00017
+                id = "일찍이 해무진에게 승리한 적 있음"; break;
+            case "曾被解無塵打敗過": // ID: M00018
+                id = "일찍이 해무진에게 패배한 적 있음"; break;
+            case "正心堂打坐痊癒": // ID: M00019
+                id = "정심당 좌선으로 완치"; break;
+            case "龍湘被石灰粉弄眼": // ID: M00020
+                id = "용상 석회가루에 눈을 다침"; break;
+            case "支線：龍湘炒菜有觸發": // ID: M00021
+                id = "서브퀘스트: 용상의 요리 발동됨"; break;
+            case "龍湘被革職": // ID: M00022
+                id = "용상 파직됨"; break;
+            case "龍湘被大師兄親": // ID: M00023
+                id = "용상, 대사형에게 입맞춤 당함"; break;
+            case "觸發假趙活我有帶秘笈的次數": // ID: M00024
+                id = "가짜 조활 '비급 가져왔어' 발동 횟수"; break;
+            case "毆打上官螢": // ID: M00025
+                id = "상관형 구타"; break;
+            case "晁和被上官螢抓": // ID: M00026
+                id = "조화, 상관형에게 잡힘"; break;
+            case "唐門收留葉式兄妹": // ID: M10001
+                id = "당문, 엽씨 남매를 거둠"; break;
+            case "與葉雲舟對立": // ID: M10002
+                id = "엽운주와 대립"; break;
+            case "曾被劉顎綁架": // ID: M10004
+                id = "일찍이 유악에게 납치된 적 있음"; break;
+            case "護送上官螢": // ID: M10005
+                id = "상관형 호위"; break;
+            case "大師兄學會喇逼雕": // ID: M10006
+                id = "대사형 라비조 습득"; break;
+            case "後山蒙面人，主角說的話": // ID: M10007
+                id = "뒷산 복면인, 주인공의 말"; break;
+            case "段考勝利": // ID: M10008
+                id = "단련 시험 승리"; break;
+            case "段考考官\r": // ID: M10009
+                //id = "단련 시험 시험관\\r\\n1. 장문인\\r\\n2. 삼사형\\r\\n3. 이사형\\r\\n4. 대사형"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "장문인"; break;
+                    case 2: mydesc = "삼사형"; break;
+                    case 3: mydesc = "이사형"; break;
+                    case 4: mydesc = "대사형"; break;
+                }
+                id = $"단련시험관({mydesc})"; break;
+            case "龍吟功秘笈": // ID: M10010
+                id = "용음공 비급"; break;
+            case "龍湘沒死": // ID: M10011
+                id = "용상 죽지 않음"; break;
+            case "惜花令對大師兄評價\r": // ID: M10012
+                //id = "석화령의 대사형에 대한 평가\\r\\n1. 대사형을 변호한다\\r\\n2. 대사형을 변호하지 않는다"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "대사형을 변호한다"; break;
+                    case 2: mydesc = "대사형을 변호하지 않는다"; break;
+                }
+                id = $"석화령의 대사형에 대한 평가({mydesc})"; break;
+            case "初見焚香": // ID: M10013
+                id = "처음으로 향을 피움"; break;
+            case "趕走了上官螢的僕人": // ID: M10014
+                id = "상관형의 하인을 쫓아냄"; break;
+            case "曾在閻關三煞時選擇逃跑": // ID: M10015
+                id = "일찍이 염관삼살 조우 시 도망 선택"; break;
+            case "與龍湘姊弟相稱": // ID: M10016
+                id = "용상과 남매처럼 지냄"; break;
+            case "觸發雪山行": // ID: M10017
+                id = "설산행 발동"; break;
+            case "雪山行的蓋房子次數": // ID: M10018
+                id = "설산행 집 짓기 횟수"; break;
+            case "雪山行樹屋等級": // ID: M10019
+                id = "설산행 나무집 등급"; break;
+            case "追加遭遇事件：夏侯蘭的敵人(小蘭死亡)": // ID: M10020
+                id = "추가 조우 사건: 하후란의 적 (소란 사망)"; break;
+            case "追加遭遇事件：夏侯蘭的敵人(小蘭存活)": // ID: M10021
+                id = "추가 조우 사건: 하후란의 적 (소란 생존)"; break;
+            case "天王座來訪": // ID: M10022
+                id = "천왕좌 방문"; break;
+            case "支持自己當掌門": // ID: M10023
+                id = "자신이 장문인이 되는 것을 지지"; break;
+            case "小師妹南宮家宴參戰": // ID: M20001
+                //id = "소사매 남궁가 연회 참전\\n1: 참전"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "참전"; break;
+                }
+                id = $"소사매 남궁가 연회 참전({mydesc})"; break;
+            case "已經知曉了杏花仙的存在": // ID: M20002
+                id = "이미 행화선의 존재를 알고 있음"; break;
+            case "南宮家宴採納結論": // ID: M20003
+                //id = "남궁가 연회 채택 결론\\n1:대사형\\n2:이사형\\n3:삼사형"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "대사형"; break;
+                    case 2: mydesc = "이사형"; break;
+                    case 3: mydesc = "삼사형"; break;
+                }
+                id = $"남궁가 연회 채택결론({mydesc})"; break;
+            case "萬壽屍心丹": // ID: M20004
+                id = "만수시심단"; break;
+            case "陰陽調和治法": // ID: M20005
+                id = "음양조화 치료법"; break;
+            case "三師兄字畫，你也有貢獻": // ID: M20006
+                id = "삼사형 글씨와 그림, 당신도 공헌함"; break;
+            case "辛儒回歸唐門": // ID: M20007
+                id = "신유 당문 복귀"; break;
+            case "留學\\n1: 青城\\n2: 崆峒": // ID: M20008
+                id = "유학\\n1: 청성\\n2: 공동"; break;
+            case "南宮來客 糾紛": // ID: M20009
+                id = "남궁 손님 분쟁"; break;
+            case "掌門病情": // ID: M20010
+                id = "장문인 병세"; break;
+            case "崆峒進的門派\r": // ID: M20011
+                //id = "공동에서 들어간 문파\\r\\n1.비천문\\r\\n2.탈백문\\r\\n3.현공문\\r\\n4.철권문"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "비천문"; break;
+                    case 2: mydesc = "탈백문"; break;
+                    case 3: mydesc = "현공문"; break;
+                    case 4: mydesc = "철권문"; break;
+                }
+                id = $"공동에서 들어간 문파({mydesc})"; break;
+            case "小梅邀請": // ID: M20012
+                id = "소매 초대"; break;
+            case "搶劫	": // ID: M20013
+                id = "강도질	"; break;
+            case "死亡擂台解說": // ID: M20014
+                id = "사망 토너먼트 해설"; break;
+            case "死亡擂台積分": // ID: M20015
+                id = "사망 토너먼트 점수"; break;
+            case "燒烤山味": // ID: M20016
+                id = "산나물 구이"; break;
+            case "造訪鐵拳門次數": // ID: M20017
+                id = "철권문 방문 횟수"; break;
+            case "小說": // ID: M20018
+                id = "소설"; break;
+            case "詩詞": // ID: M20019
+                id = "시사"; break;
+            case "古文": // ID: M20020
+                id = "고문"; break;
+            case "造訪奪魄森林": // ID: M20021
+                id = "탈백 삼림 방문"; break;
+            case "眼睛不安分": // ID: M20022
+                id = "눈이 정숙하지 못함"; break;
+            case "前仆後繼": // ID: M20023
+                id = "앞사람이 쓰러지면 뒷사람이 계속함"; break;
+            case "第一次遇到搶劫": // ID: M20024
+                id = "처음으로 강도질을 만남"; break;
+            case "捉捕譚霸刀時曾見過大師兄用飛燕流星翎粉碎畫舫": // ID: M20025
+                id = "담패도 체포 시 대사형이 비연유성령으로 화방선을 부수는 것을 본 적 있음"; break;
+            case "小師妹守護者": // ID: M20026
+                id = "소사매 수호자"; break;
+            case "唐門留學 離家出走": // ID: M20027
+                id = "당문 유학 중 가출"; break;
+            case "離家出走路線\r": // ID: M20028
+                //id = "가출 경로\\r\\n1. 폐허 사원\\r\\n2. 객잔"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "폐허 사원"; break;
+                    case 2: mydesc = "객잔"; break;
+                }
+                id = $"가출 경로({mydesc})"; break;
+            case "陋習": // ID: M20029
+                id = "나쁜 습관"; break;
+            case "和小菊下過棋": // ID: M20030
+                id = "소국과 바둑을 둔 적 있음"; break;
+            case "修仙次數": // ID: M20031
+                id = "신선 수련 횟수"; break;
+            case "唐門留學練武場次數": // ID: M20032
+                id = "당문 유학 중 연무장 이용 횟수"; break;
+            case "飛天門好感": // ID: M21000
+                id = "비천문 호감"; break;
+            case "玄功門好感": // ID: M21001
+                id = "현공문 호감"; break;
+            case "小竹攜帶虎戰車": // ID: M30001
+                id = "소죽 호전차 휴대"; break;
+            case "第一鏢行": // ID: M30002
+                id = "제일표행"; break;
+            case "樊嘯天被關": // ID: M30003
+                id = "번소천 감금됨"; break;
+            case "救樊嘯天的狗": // ID: M30004
+                id = "번소천의 개를 구함"; break;
+            case "官兵大戰丐幫的結果\r": // ID: M30005
+                //id = "관군 대 개방 전투 결과\\r\\n1:관군 우세\\r\\n2:개방 우세\\r\\n3.타 문파 인원"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "관군 우세"; break;
+                    case 2: mydesc = "개방 우세"; break;
+                    case 3: mydesc = "타 문파 인원"; break;
+                }
+                id = $"관군 대 개방 전투 결과({mydesc})"; break;
+            case "唐門丐幫戰役獲得勝利": // ID: M30006
+                id = "당문-개방 전역 승리"; break;
+            case "抓獲丐幫數量\r": // ID: M30007
+                //id = "체포한 개방 인원 수\\r\\n1:2할\\r\\n2:5할"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "2할"; break;
+                    case 2: mydesc = "5할"; break;
+                }
+                id = $"체포한 개방 인원 수({mydesc})"; break;
+            case "被丐幫綁架": // ID: M30008
+                id = "개방에게 납치됨"; break;
+            case "南宮淺強化": // ID: M30009
+                id = "남궁천 강화"; break;
+            case "南宮淺黑化": // ID: M30010
+                id = "남궁천 흑화"; break;
+            case "戰役追加葉雲舟召喚技": // ID: M30011
+                id = "전역에 엽운주 소환 기술 추가"; break;
+            case "虎戰車命名": // ID: M30012
+                id = "호전차 명명"; break;
+            case "上官螢參戰江陵大戰": // ID: M30013
+                id = "상관형 강릉대전 참전"; break;
+            case "玄功傳承": // ID: M30014
+                id = "현공 전승"; break;
+            case "瑞笙全屬性強化": // ID: M30015
+                id = "서생 모든 능력치 강화"; break;
+            case "解無塵全屬性強化": // ID: M30016
+                id = "해무진 모든 능력치 강화"; break;
+            case "聽聞毛二壯的策略": // ID: M30017
+                id = "왕이장의 책략을 들음"; break;
+            case "小菊出戰毛二壯": // ID: M30018
+                id = "소국, 왕이장과 대결"; break;
+            case "觸發大師兄前往金國刺殺皇帝": // ID: M30019
+                id = "대사형 금나라 황제 암살 시도 발동"; break;
+            case "已知崆峒秘聞": // ID: M30020
+                id = "공동 비사를 알고 있음"; break;
+            case "小菊的悲劇": // ID: M30021
+                id = "소국의 비극"; break;
+            case "隨南宮恆訪問丐幫": // ID: M30022
+                id = "남궁형과 함께 개방 방문"; break;
+            case "縱放丐幫": // ID: M30023
+                id = "개방을 방면함"; break;
+            case "A書事件得到大師兄幫助": // ID: M30024
+                id = "A서 사건에서 대사형의 도움을 받음"; break;
+            case "毛二壯曾經在江陵大戰使用過金剛神槍指": // ID: M30025
+                id = "왕이장이 일찍이 강릉대전에서 금강신창지를 사용한 적 있음"; break;
+            case "觸發笙活雙俠分支": // ID: M30026
+                id = "생사쌍협 분기 발동"; break;
+            case "身有鐵琵琶功，卻在江陵大戰後拒絕加入崆峒派": // ID: M30027
+                id = "철비파공을 익혔으나, 강릉대전 후 공동파 가입 거절"; break;
+            case "飛俠千里行": // ID: M30028
+                id = "비협천리행"; break;
+            case "主角參戰江陵大戰": // ID: M30029
+                id = "주인공 강릉대전 참전"; break;
+            case "向瑞杏許願": // ID: M30030
+                id = "서행에게 소원 빌기"; break;
+            case "毛二壯幫南宮淺打通任督二脈": // ID: M30035
+                id = "왕이장이 남궁천의 임독이맥을 뚫어줌"; break;
+            case "上官螢的救命恩人": // ID: M30036
+                id = "상관형의 생명의 은인"; break;
+            case "上官螢來到江陵": // ID: M30037
+                id = "상관형 강릉 도착"; break;
+            case "葉雲裳閒談：碧潤糕開啟": // ID: M30038
+                id = "엽운상 잡담: 벽윤고 활성화"; break;
+            case "江陵大戰觸發瑞笙劇情": // ID: M30039
+                id = "강릉대전 서생 이벤트 발동"; break;
+            case "與飛石幫進入交戰": // ID: M40001
+                id = "비석방과 교전 상태 돌입"; break;
+            case "與崆峒派進入交戰": // ID: M40002
+                id = "공동파와 교전 상태 돌입"; break;
+            case "與點蒼派進入交戰": // ID: M40003
+                id = "점창파와 교전 상태 돌입"; break;
+            case "與丐幫進入交戰": // ID: M40004
+                id = "개방과 교전 상태 돌입"; break;
+            case "假趙活事件": // ID: M40005
+                id = "가짜 조활 사건"; break;
+            case "上官螢的口才": // ID: M40006
+                id = "상관형의 말솜씨"; break;
+            case "唐杉心冷": // ID: M40007
+                id = "당삼 실망함"; break;
+            case "曾經提案嚐試與飛石幫和解": // ID: M40008
+                id = "일찍이 비석방과 화해 시도 제안"; break;
+            case "觸發接掌練丹房事件": // ID: M40009
+                id = "연단방 인수 사건 발동"; break;
+            case "大師兄痊癒": // ID: M40010
+                id = "대사형 완치"; break;
+            case "知道大師兄有受傷": // ID: M40011
+                id = "대사형이 다친 것을 알고 있음"; break;
+            case "知道石公遠以前是山賊": // ID: M40012
+                id = "석공원이 과거 산적이었음을 알고 있음"; break;
+            case "朱嬸蔥肉包子": // ID: M40013
+                id = "주씨 아주머니 파고기만두"; break;
+            case "決戰臥雲岡回返同行者\r": // ID: M40014
+                //id = "결전 와운강 귀환 동행자\\r\\n1.용상\\r\\n2.복온"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "용상"; break;
+                    case 2: mydesc = "복온"; break;
+                }
+                id = $"결전 와운강 귀환 동행자({mydesc})"; break;
+            case "決戰臥雲崗大師兄施展金剛神槍指": // ID: M40015
+                id = "결전 와운강 대사형 금강신창지 시전"; break;
+            case "龍湘全屬性強化": // ID: M40016
+                id = "용상 모든 능력치 강화"; break;
+            case "觸發店小二事件": // ID: M40017
+                id = "점소이 사건 발동"; break;
+            case "小梅與主角們同行回唐門": // ID: M40018
+                id = "소매 주인공 일행과 당문으로 귀환"; break;
+            case "觸發女飛賊追殺事件": // ID: M40019
+                id = "여비적 추격 사건 발동"; break;
+            case "臥雲崗回程結果\r": // ID: M40020
+                //id = "와운강 귀환 결과\\r\\n1.금오상인에게 머리를 맞음\\r\\n2.신도룡에게 내력을 흡수당함"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "금오상인에게 머리를 맞음"; break;
+                    case 2: mydesc = "신도룡에게 내력을 흡수당함"; break;
+                }
+                id = $"와운강 귀환 결과({mydesc})"; break;
+            case "戰勝金烏上人": // ID: M40021
+                id = "금오상인에게 승리"; break;
+            case "申屠龍吸取內力": // ID: M40022
+                id = "신도룡 내력 흡수"; break;
+            case "申屠龍內力大幅縮減": // ID: M40023
+                id = "신도룡 내력 대폭 감소"; break;
+            case "申屠龍屬性變為陽": // ID: M40024
+                id = "신도룡 속성 양으로 변경"; break;
+            case "小梅內力大幅下降": // ID: M40025
+                id = "소매 내력 대폭 하락"; break;
+            case "見過成吉思汗": // ID: M40026
+                id = "칭기즈 칸을 만난 적 있음"; break;
+            case "龍湘中毒值": // ID: M40027
+                id = "용상 중독 수치"; break;
+            case "福韞中毒值": // ID: M40028
+                id = "복온 중독 수치"; break;
+            case "小梅給解藥\\n": // ID: M40029
+                id = "소매 해독제 제공\\n"; break;
+            case "說得唐守鴻": // ID: M40030
+                id = "당수홍 설득 성공"; break;
+            case "治癒量": // ID: M40031
+                id = "치유량"; break;
+            case "開啟煉丹房治癒判斷": // ID: M40032
+                id = "연단방 치유 판정 활성화"; break;
+            case "大師兄活": // ID: M40033
+                id = "대사형 생존"; break;
+            case "大師兄倖存": // ID: M40034
+                id = "대사형 생존"; break;
+            case "與青城派進入交戰": // ID: M40035
+                id = "청성파와 교전 상태 돌입"; break;
+            case "決鬥臥雲崗路線\r": // ID: M40036
+                //id = "결투 와운강 루트\\r\\n1 대사형을 따르지 않음\\r\\n2 대사형을 따름"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "대사형을 따르지 않음"; break;
+                    case 2: mydesc = "대사형을 따름"; break;
+                }
+                id = $"결투 와운강 루트({mydesc})"; break;
+            case "發生三門會談且小梅幫忙趕走敵人": // ID: M40037
+                id = "삼문회담 발생 및 소매가 적 격퇴 지원"; break;
+            case "龍湘的免死金牌": // ID: M40038
+                id = "용상의 면사금패"; break;
+            case "雲裳病情": // ID: M40039
+                id = "운상 병세"; break;
+            case "決戰臥雲崗大師兄勝敗": // ID: M40040
+                id = "결전 와운강 대사형 승패"; break;
+            case "幫大師兄療傷": // ID: M40041
+                id = "대사형 치료 지원"; break;
+            case "小梅贈刀": // ID: M40042
+                id = "소매 칼 선물"; break;
+            case "天命-是你藏起來不讓喝的猴兒酒": // ID: M40043
+                id = "천명 - 네가 숨겨서 못 마시게 한 후아주"; break;
+            case "觸發小師妹約束分支": // ID: M40044
+                id = "소사매 약속 분기 발동"; break;
+            case "4-2中辦菜的那個師兄被招回唐門": // ID: M40045
+                id = "4-2 요리 담당 사형 당문으로 소환됨"; break;
+            case "三門會談與金烏上人交手過": // ID: M40046
+                id = "삼문회담에서 금오상인과 교전한 적 있음"; break;
+            case "內戰時上官螢有幫助唐門": // ID: M40047
+                id = "내전 시 상관형이 당문을 도움"; break;
+            case "崆峒地牢救小梅": // ID: M40048
+                id = "공동 지하 감옥에서 소매 구출"; break;
+            case "幫石公遠和石夫人和好": // ID: M40049
+                id = "석공원과 석부인 화해 도움"; break;
+            case "請泥教弟子來唐門避難": // ID: M40050
+                id = "니교 제자들을 당문으로 피난 요청"; break;
+            case "派遣唐衫陪同大師兄": // ID: M40051
+                id = "당삼을 대사형과 동행하도록 파견"; break;
+            case "拿走大師兄的猴兒酒": // ID: M40052
+                id = "대사형의 후아주를 가져감"; break;
+            case "捉住唐守鴻": // ID: M40053
+                id = "당수홍을 붙잡음"; break;
+            case "主角對唐衫友善": // ID: M40054
+                id = "주인공, 당삼에게 우호적"; break;
+            case "唐門會議追加選項：前往崆峒 ": // ID: M50001
+                id = "당문 회의 추가 선택지: 공동으로 이동 "; break;
+            case "5-1勸離前往的場所次數 練武場+後山": // ID: M50002
+                id = "5-1 이탈 권유 장소 방문 횟수 연무장+뒷산"; break;
+            case "小師妹出嫁與三師兄決鬥": // ID: M50003
+                id = "소사매 출가 및 삼사형과 결투"; break;
+            case "大地圖事件追加江湖少俠追殺": // ID: M50004
+                id = "월드맵 사건 추가: 강호 소협 추격"; break;
+            case "南宮深的幹話": // ID: M50005
+                id = "남궁심의 허튼소리"; break;
+            case "唐門會議選項：與南宮世家結盟": // ID: M50006
+                id = "당문 회의 선택지: 남궁세가와 동맹"; break;
+            case "南宮淺拜師夏侯蘭": // ID: M50007
+                id = "남궁천 하후란에게 배사"; break;
+            case "解無塵VS南宮深\r": // ID: M50008
+                //id = "해무진 VS 남궁심\\r\\n1. 남궁심 승\\r\\n2. 해무진 승"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "남궁심 승"; break;
+                    case 2: mydesc = "해무진 승"; break;
+                }
+                id = $"해무진 VS 남궁심({mydesc})"; break;
+            case "迎戰崆峒 小師妹參戰": // ID: M50009
+                id = "공동파 요격 시 소사매 참전"; break;
+            case "迎戰崆峒 瑞笙參戰": // ID: M50010
+                id = "공동파 요격 시 서생 참전"; break;
+            case "迎戰崆峒 葉雲舟參戰": // ID: M50011
+                id = "공동파 요격 시 엽운주 참전"; break;
+            case "口嚼茶事件中小菊被燙": // ID: M50012
+                id = "입으로 씹은 차 사건 중 소국이 데임"; break;
+            case "決鬥崆峒派\r": // ID: M50013
+                //id = "공동파 결투\\r\\n1. 집단 구타\\r\\n2. 금오상인과 단독 결투"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "집단 구타"; break;
+                    case 2: mydesc = "금오상인과 단독 결투"; break;
+                }
+                id = $"공동파 결투({mydesc})"; break;
+            case "被金烏上人敲頭": // ID: M50014
+                id = "금오상인에게 머리를 맞음"; break;
+            case "飛天弟子顏疆死亡": // ID: M50015
+                id = "비천 제자 안강 사망"; break;
+            case "瑞笙好感度-20": // ID: M50016
+                id = "서생 호감도 -20"; break;
+            case "第一次決鬥金烏上人結果": // ID: M50017
+                id = "첫 번째 금오상인 결투 결과"; break;
+            case "金烏上人死亡": // ID: M50018
+                id = "금오상인 사망"; break;
+            case "小師妹飛踢": // ID: M50019
+                id = "소사매 날아차기"; break;
+            case " 地獄道來訪": // ID: M50020
+                id = " 지옥도 방문"; break;
+            case "開啟唐門會議提案 雪山行": // ID: M50021
+                id = "당문 회의 제안 '설산행' 활성화"; break;
+            case "夏侯蘭樹屋規格\r": // ID: M50022
+                //id = "하후란 나무집 규격\\r\\n1. 보통\\r\\n2. 고급"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "보통"; break;
+                    case 2: mydesc = "고급"; break;
+                }
+                id = $"하후란 나무집 규격({mydesc})"; break;
+            case "委託四師兄的事情\r": // ID: M60001
+                //id = "사사형에게 부탁한 일\\r\\n1. 소사매가 잘 지내는지 알고 싶다\\r\\n2. 화산에 신선이 있고, 신선에게 영단이 있다고 들었다"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "소사매가 잘 지내는지 알고 싶다"; break;
+                    case 2: mydesc = "화산에 신선이 있고, 신선에게 영단이 있다고 들었다"; break;
+                }
+                id = $"사사형에게 부탁한 일({mydesc})"; break;
+            case "與南宮世家結盟": // ID: M60002
+                id = "남궁세가와 동맹"; break;
+            case "小師妹同行武林大會": // ID: M60003
+                id = "소사매 무림대회 동행"; break;
+            case "小梅同行武林大會": // ID: M60004
+                id = "소매 무림대회 동행"; break;
+            case "小竹同行武林大會": // ID: M60005
+                id = "소죽 무림대회 동행"; break;
+            case "葉雲舟同行武林大會": // ID: M60006
+                id = "엽운주 무림대회 동행"; break;
+            case "葉雲裳同行武林大會": // ID: M60007
+                id = "엽운상 무림대회 동행"; break;
+            case "葉雲舟煎藥俠曾觸發": // ID: M60008
+                id = "엽운주 약 달이는 협객 이벤트 발동된 적 있음"; break;
+            case "大地圖追加遭遇事件：新通緝犯": // ID: M60009
+                id = "월드맵 추가 조우 사건: 새로운 현상수배범"; break;
+            case "宋悲同行武林大會": // ID: M60010
+                id = "송비 무림대회 동행"; break;
+            case "福韞同行武林大會": // ID: M60011
+                id = "복온 무림대회 동행"; break;
+            case "嵩山派同行武林大會": // ID: M60012
+                id = "숭산파 무림대회 동행"; break;
+            case "龍湘同行武林大會": // ID: M60013
+                id = "용상 무림대회 동행"; break;
+            case "樊嘯天同行武林大會": // ID: M60014
+                id = "번소천 무림대회 동행"; break;
+            case "成為崆峒掌派人": // ID: M60015
+                id = "공동 장문인 됨"; break;
+            case "前往武林大會路線\r": // ID: M60016
+                //id = "무림대회 이동 경로\\r\\n1. 사제에게 인솔을 맡기고, 홀로 강릉으로 감\\r\\n2. 금향궁에 손님으로 방문"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "사제에게 인솔을 맡기고, 홀로 강릉으로 감"; break;
+                    case 2: mydesc = "금향궁에 손님으로 방문"; break;
+                }
+                id = $"무림대회 이동 경로({mydesc})"; break;
+            case "龍湘的反應": // ID: M60017
+                id = "용상의 반응"; break;
+            case "開啟正心堂養成：葉雲裳彈琴": // ID: M60018
+                id = "정심당 육성 활성화: 엽운상 거문고 연주"; break;
+            case "開啟中間階段選項：挑戰畫中仙": // ID: M60019
+                id = "중간 단계 선택지 활성화: 화중선 도전"; break;
+            case "解除金烏上人或申屠龍的DEBUFF": // ID: M60020
+                id = "금오상인 또는 신도룡의 디버프 해제"; break;
+            case "與畫中仙決鬥": // ID: M60021
+                id = "화중선과 결투"; break;
+            case "觸發大漠行": // ID: M60022
+                id = "대사막행 발동"; break;
+            case "小梅全屬性弱化": // ID: M60023
+                id = "소매 모든 능력치 약화"; break;
+            case "小梅練玄燭心經": // ID: M60024
+                id = "소매 현촉심경 수련"; break;
+            case "小梅屬性提升，學會一趾神通": // ID: M60025
+                id = "소매 능력치 상승, 일지신통 습득"; break;
+            case "上官螢遠嫁日本": // ID: M60026
+                id = "상관형 일본으로 원정 시집"; break;
+            case "六戒刀": // ID: M60027
+                id = "육계도"; break;
+            case "知道溫夫人是人間道法王": // ID: M60028
+                id = "온부인이 인간도 법왕임을 알고 있음"; break;
+            case "挑戰上官隼": // ID: M60029
+                id = "상관준 도전"; break;
+            case "葉雲舟代表唐門出戰": // ID: M60030
+                id = "엽운주 당문 대표로 출전"; break;
+            case "上官螢的可能性": // ID: M60031
+                id = "상관형의 가능성"; break;
+            case "主角打瑞笙": // ID: M60032
+                id = "주인공 서생과 대결"; break;
+            case "挑戰上官隼勝敗\r": // ID: M60033
+                //id = "상관준 도전 승패\\r\\n1. 승리\\r\\n2. 실패"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "승리"; break;
+                    case 2: mydesc = "실패"; break;
+                }
+                id = $"상관준 도전 승패({mydesc})"; break;
+            case "前往終南山": // ID: M60034
+                id = "종남산으로 이동"; break;
+            case "龍之憂鬱中觸發龍湘的心事": // ID: M60035
+                id = "용의 우울 중 용상의 속마음 발동"; break;
+            case "唐門收容龍湘": // ID: M60036
+                id = "당문 용상 수용"; break;
+            case "帶小梅拜見錦香宮": // ID: M60037
+                id = "소매를 데리고 금향궁 배알"; break;
+            case "武林大會選擇支持對象\r": // ID: M60038
+                //id = "무림대회 지지 대상 선택\\r\\n1. 정도\\r\\n2. 금향궁"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "정도"; break;
+                    case 2: mydesc = "금향궁"; break;
+                }
+                id = $"무림대회 지지 대상 선택({mydesc})"; break;
+            case "武林大會決鬥南宮深": // ID: M60039
+                id = "무림대회 남궁심 결투"; break;
+            case "武林大會拜訪錦香宮": // ID: M60040
+                id = "무림대회 금향궁 방문"; break;
+            case "錦香宮行被趕出來": // ID: M60041
+                id = "금향궁 방문 중 쫓겨남"; break;
+            case "龍湘 天罡伏魔劍": // ID: M60042
+                id = "용상 천강복마검"; break;
+            case "龍湘 龍淵七絕": // ID: M60043
+                id = "용상 용연칠절"; break;
+            case "決鬥袁無憲": // ID: M60044
+                id = "원무헌 결투"; break;
+            case "戰勝袁無憲與荊紅": // ID: M60045
+                id = "원무헌과 형홍에게 승리"; break;
+            case "致哀中與南宮深談話": // ID: M60046
+                id = "애도 중 남궁심과 대화"; break;
+            case "投票": // ID: M60047
+                id = "투표"; break;
+            case "全真支持": // ID: M60048
+                id = "전진교 지지"; break;
+            case "嵩山支持": // ID: M60049
+                id = "숭산파 지지"; break;
+            case "青城支持": // ID: M60050
+                id = "청성파 지지"; break;
+            case "點蒼支持": // ID: M60051
+                id = "점창파 지지"; break;
+            case "峨嵋支持": // ID: M60052
+                id = "아미파 지지"; break;
+            case "崆峒支持": // ID: M60053
+                id = "공동파 지지"; break;
+            case "南宮支持": // ID: M60054
+                id = "남궁세가 지지"; break;
+            case "丐幫支持": // ID: M60055
+                id = "개방 지지"; break;
+            case "飛石幫支持": // ID: M60056
+                id = "비석방 지지"; break;
+            case "晁和死亡": // ID: M60057
+                id = "조화 사망"; break;
+            case "地獄道行": // ID: M60058
+                id = "지옥도행"; break;
+            case "投降正派": // ID: M60059
+                id = "정도에 항복"; break;
+            case "傷亡結果\r": // ID: M60060
+                //id = "사상자 결과\\r\\n1. 사상자 다수 발생\\r\\n2. 사망자 및 부상자 발생\\r\\n3. 다행히 사망자 없음"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "사상자 다수 발생"; break;
+                    case 2: mydesc = "사망자 및 부상자 발생"; break;
+                    case 3: mydesc = "다행히 사망자 없음"; break;
+                }
+                id = $"사상자 결과({mydesc})"; break;
+            case "與上官螢有約": // ID: M60061
+                id = "상관형과 약속 있음"; break;
+            case "選擇投降": // ID: M60062
+                id = "항복 선택"; break;
+            case "下樓喝酒": // ID: M60063
+                id = "아래층으로 내려가 술 마시기"; break;
+            case "小菊喝醉": // ID: M60064
+                id = "소국 취함"; break;
+            case "有任何人幫忙備馬": // ID: M60065
+                id = "누군가 말 준비를 도움"; break;
+            case "回程說點什麼\r": // ID: M60066
+                //id = "귀환길에 할 말\\r\\n1. 위협\\r\\n2. 좋은 말로 설득\\r\\n3. 노래 부르기"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "위협"; break;
+                    case 2: mydesc = "좋은 말로 설득"; break;
+                    case 3: mydesc = "노래 부르기"; break;
+                }
+                id = $"귀환길에 할 말({mydesc})"; break;
+            case "向四師兄要求土特產": // ID: M60067
+                id = "사사형에게 토산품 요구"; break;
+            case "向鄒博指控申屠龍": // ID: M60068
+                id = "추박에게 신도룡 고발"; break;
+            case "武林大會選擇接納唐衫": // ID: M60069
+                id = "무림대회에서 당삼 수용 선택"; break;
+            case "小師妹有同行風雨山並跟瑞笙見過面": // ID: M60070
+                id = "소사매 풍우산 동행 및 서생과 만난 적 있음"; break;
+            case "武林大會對飛石幫友善": // ID: M60071
+                id = "무림대회에서 비석방에게 우호적"; break;
+            case "主角在武林大會支持錦香宮與上官隼對抗": // ID: M60072
+                id = "주인공 무림대회에서 금향궁 지지 및 상관준과 대항"; break;
+            case "觸發四師兄歸來": // ID: M70001
+                id = "사사형 귀환 발동"; break;
+            case "檄文結果\r": // ID: M70002
+                //id = "격문 결과\\r\\n1. 무림공적\\r\\n2. 조정 명령"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "무림공적"; break;
+                    case 2: mydesc = "조정 명령"; break;
+                }
+                id = $"격문 결과({mydesc})"; break;
+            case "小梅村曝光": // ID: M70003
+                id = "소매촌 노출"; break;
+            case "可成立西武林盟": // ID: M70004
+                id = "서무림맹 창설 가능"; break;
+            case "與泥教結盟": // ID: M70005
+                id = "니교와 동맹"; break;
+            case "和平之路": // ID: M70006
+                id = "평화의 길"; break;
+            case "唐門會議選項開啟：暗殺盟主": // ID: M70007
+                id = "당문 회의 선택지 활성화: 맹주 암살"; break;
+            case "訪問小菊": // ID: M70008
+                id = "소국 방문"; break;
+            case "遺策": // ID: M70009
+                id = "남겨진 계책"; break;
+            case "圍攻泥教": // ID: M70010
+                id = "니교 포위 공격"; break;
+            case "票數：退隱江湖": // ID: M70011
+                id = "투표수: 강호 은퇴"; break;
+            case "票數：戰他娘親": // ID: M70012
+                id = "투표수: 빌어먹을 것들과 싸운다"; break;
+            case "票數：響應武林盟": // ID: M70013
+                id = "투표수: 무림맹에 호응"; break;
+            case "三師兄的決策\r": // ID: M70014
+                //id = "삼사형의 결정\\r\\n1. 강호 은퇴\\r\\n2. 빌어먹을 것들과 싸운다\\r\\n3. 무림맹에 호응"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "강호 은퇴"; break;
+                    case 2: mydesc = "빌어먹을 것들과 싸운다"; break;
+                    case 3: mydesc = "무림맹에 호응"; break;
+                }
+                id = $"삼사형의 결정({mydesc})"; break;
+            case "你的決策\r": // ID: M70015
+                //id = "당신의 결정\\r\\n1. 강호 은퇴\\r\\n2. 빌어먹을 것들과 싸운다\\r\\n3. 무림맹에 호응\\n4. 서무림맹"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "강호 은퇴"; break;
+                    case 2: mydesc = "빌어먹을 것들과 싸운다"; break;
+                    case 3: mydesc = "무림맹에 호응"; break;
+                    case 4: mydesc = "서무림맹"; break;
+                }
+                id = $"당신의 결정({mydesc})"; break;
+            case "小師妹的票": // ID: M70016
+                id = "소사매의 표"; break;
+            case "四師兄的決策\r": // ID: M70017
+                //id = "사사형의 결정\\r\\n1. 강호 은퇴\\r\\n2. 빌어먹을 것들과 싸운다\\r\\n3. 무림맹에 호응"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "강호 은퇴"; break;
+                    case 2: mydesc = "빌어먹을 것들과 싸운다"; break;
+                    case 3: mydesc = "무림맹에 호응"; break;
+                }
+                id = $"사사형의 결정({mydesc})"; break;
+            case "票數相同決鬥勝敗\r": // ID: M70018
+                //id = "투표수 동률 시 결투 승패\\r\\n1. 패\\r\\n2. 승"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "패"; break;
+                    case 2: mydesc = "승"; break;
+                }
+                id = $"투표수 동률 시 결투 승패({mydesc})"; break;
+            case "退隱江湖": // ID: M70019
+                id = "강호 은퇴"; break;
+            case "小梅提出兇殘的意見": // ID: M70020
+                id = "소매 흉악한 의견 제시"; break;
+            case "曾經在前往武林大會的旅途中答應老僧人去嵩山": // ID: M70021
+                id = "일찍이 무림대회로 가는 길에 노승에게 숭산에 가기로 약속함"; break;
+            case "四師兄出資上官螢": // ID: M70022
+                id = "사사형 상관형에게 자금 지원"; break;
+            case "龍湘技能 勇氣": // ID: M70023
+                id = "용상 기술 용기"; break;
+            case "已派人至青城派": // ID: M70024
+                id = "청성파에 사람 파견 완료"; break;
+            case "已派人至崆峒派": // ID: M70025
+                id = "공동파에 사람 파견 완료"; break;
+            case "已派人至峨嵋派": // ID: M70026
+                id = "아미파에 사람 파견 완료"; break;
+            case "已派人至丐幫": // ID: M70027
+                id = "개방에 사람 파견 완료"; break;
+            case "指派四師兄狀態\r": // ID: M70028
+                //id = "사사형 파견 상태\\r\\n1. 청성파\\r\\n2. 공동파\\r\\n3. 개방\\r\\n4. 중소 문파"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "청성파"; break;
+                    case 2: mydesc = "공동파"; break;
+                    case 3: mydesc = "개방"; break;
+                    case 4: mydesc = "중소 문파"; break;
+                }
+                id = $"사사형 파견 상태({mydesc})"; break;
+            case "福韞出使峨嵋派": // ID: M70029
+                id = "복온 아미파에 사절로 파견"; break;
+            case "小梅出使崆峒派": // ID: M70030
+                id = "소매 공동파에 사절로 파견"; break;
+            case "小竹出使崆峒派": // ID: M70031
+                id = "소죽 공동파에 사절로 파견"; break;
+            case "小菊出使崆峒派": // ID: M70032
+                id = "소국 공동파에 사절로 파견"; break;
+            case "上官螢寫信至崆峒派": // ID: M70033
+                id = "상관형 공동파에 편지 발송"; break;
+            case "唐門弟子出使崆峒派": // ID: M70034
+                id = "당문 제자 공동파에 사절로 파견"; break;
+            case "主角提議初始門派\r": // ID: M70035
+                //id = "주인공 초기 문파 제안\\r\\n1. 청성파\\r\\n2. 아미파\\r\\n3. 개방"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "청성파"; break;
+                    case 2: mydesc = "아미파"; break;
+                    case 3: mydesc = "개방"; break;
+                }
+                id = $"주인공 초기 문파 제안({mydesc})"; break;
+            case "唐門弟子出使青城派": // ID: M70036
+                id = "당문 제자 청성파에 사절로 파견"; break;
+            case "唐衫出使峨嵋派": // ID: M70037
+                id = "당삼 아미파에 사절로 파견"; break;
+            case "三師兄出使峨嵋派": // ID: M70038
+                id = "삼사형 아미파에 사절로 파견"; break;
+            case "暫時獲得掌門令牌": // ID: M70039
+                id = "임시로 장문 영패 획득"; break;
+            case "成功幫助上官螢收買滄幫": // ID: M70040
+                id = "상관형의 창방 매수 성공적으로 도움"; break;
+            case "練武場特訓：葉雲舟加入敵對陣營": // ID: M70041
+                id = "연무장 특별 훈련: 엽운주 적대 진영 합류"; break;
+            case "練武場特訓：龍湘加入敵對陣營": // ID: M70042
+                id = "연무장 특별 훈련: 용상 적대 진영 합류"; break;
+            case "練武場特訓：四師兄加入敵方陣營": // ID: M70043
+                id = "연무장 특별 훈련: 사사형 적대 진영 합류"; break;
+            case "支線：極端揍狗拳": // ID: M70044
+                id = "서브퀘스트: 극단적 개 패기 권법"; break;
+            case "說服丐幫結果\r": // ID: M70045
+                //id = "개방 설득 결과\\r\\n1. 마부귀 협조\\r\\n2. 실패\\r\\n3. 개방 당문 가입"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "마부귀 협조"; break;
+                    case 2: mydesc = "실패"; break;
+                    case 3: mydesc = "개방 당문 가입"; break;
+                }
+                id = $"개방 설득 결과({mydesc})"; break;
+            case "說服峨嵋派結果\r": // ID: M70046
+                //id = "아미파 설득 결과\\r\\n1. 성공\\r\\n2. 실패\\r\\n3. 양측 모두 돕지 않음"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "성공"; break;
+                    case 2: mydesc = "실패"; break;
+                    case 3: mydesc = "양측 모두 돕지 않음"; break;
+                }
+                id = $"아미파 설득 결과({mydesc})"; break;
+            case "唐衫的支援\r": // ID: M70047
+                id = "당삼의 지원"; break;
+            case "說服青城派結果": // ID: M70048
+                //id = "청성파 설득 결과\\r\\n1.성공\\r\\n2.실패"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "성공"; break;
+                    case 2: mydesc = "실패"; break;
+                }
+                id = $"청성파 설득 결과({mydesc})"; break;
+            case "說服中小門派結果\r": // ID: M70049
+                //id = "중소 문파 설득 결과\\r\\n1. 성공\\r\\n2. 실패\\r\\n3. 관망"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "성공"; break;
+                    case 2: mydesc = "실패"; break;
+                    case 3: mydesc = "관망"; break;
+                }
+                id = $"중소 문파 설득 결과({mydesc})"; break;
+            case "說服崆峒派結果\r": // ID: M70050
+                //id = "공동파 설득 결과\\r\\n1. 성공\\r\\n2. 실패"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "성공"; break;
+                    case 2: mydesc = "실패"; break;
+                }
+                id = $"공동파 설득 결과({mydesc})"; break;
+            case "設陷阱": // ID: M70051
+                id = "함정 설치"; break;
+            case "頑抗路線": // ID: M70052
+                id = "완강 저항 루트"; break;
+            case "瑞笙弱化": // ID: M70053
+                id = "서생 약화"; break;
+            case "發生修羅場事件": // ID: M70054
+                id = "수라장 사건 발생"; break;
+            case "應對之策提出西武林盟時(學問>60)&&(道德>中庸)": // ID: M70055
+                id = "대응책으로 서무림맹 제안 시 (학문>60)&&(도덕>중용)"; break;
+            case "飛石幫支持西武林盟": // ID: M70056
+                id = "비석방 서무림맹 지지"; break;
+            case "8-1 你的對策\r": // ID: M80001
+                //id = "8-1 당신의 대응책\\r\\n1. 복온\\r\\n2. 반론\\r\\n3. 할 말 없음"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "복온"; break;
+                    case 2: mydesc = "반론"; break;
+                    case 3: mydesc = "할 말 없음"; break;
+                }
+                id = $"8-1 당신의 대응책({mydesc})"; break;
+            case "對策": // ID: M80002
+                id = "대응책"; break;
+            case "小師妹的保護": // ID: M80003
+                id = "소사매의 보호"; break;
+            case "上官衰弱": // ID: M80004
+                id = "상관세가 쇠약"; break;
+            case "小梅改邪歸正": // ID: M80005
+                id = "소매 개과천선"; break;
+            case "護衛三師兄第一個刺客\r": // ID: M80006
+                //id = "삼사형 호위 첫 번째 자객\\r\\n1. 담패도\\r\\n2. 방진천\\r\\n3. 당삼"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "담패도"; break;
+                    case 2: mydesc = "방진천"; break;
+                    case 3: mydesc = "당삼"; break;
+                }
+                id = $"삼사형 호위 첫 번째 자객({mydesc})"; break;
+            case "護衛三師兄第二個刺客\r": // ID: M80007
+                //id = "삼사형 호위 두 번째 자객\\r\\n1. 금오상인\\r\\n2. 화룡선군\\r\\n3. 석명\\r\\n4. 점소이"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "금오상인"; break;
+                    case 2: mydesc = "화룡선군"; break;
+                    case 3: mydesc = "석명"; break;
+                    case 4: mydesc = "점소이"; break;
+                }
+                id = $"삼사형 호위 두 번째 자객({mydesc})"; break;
+            case "護衛三師兄 小師妹同行": // ID: M80008
+                id = "삼사형 호위 시 소사매 동행"; break;
+            case "錦香宮支援唐門": // ID: M80009
+                id = "금향궁 당문 지원"; break;
+            case "唐門出擊的結果1\r": // ID: M80010
+                //id = "당문 출격 결과1\\r\\n1. 금향궁 서무림맹 가입\\r\\n2. 맞받아 소리침\\r\\n3. 소리침 당함\\n4. 문 열고 요격"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "금향궁 서무림맹 가입"; break;
+                    case 2: mydesc = "맞받아 소리침"; break;
+                    case 3: mydesc = "소리침 당함"; break;
+                    case 4: mydesc = "문 열고 요격"; break;
+                }
+                id = $"당문 출격 결과1({mydesc})"; break;
+            case "東西武林盟在唐門的決策\r": // ID: M80011
+                //id = "동서무림맹 당문 내 결정\\r\\n1. 삼사형 호위\\r\\n2. 당문 출격"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "삼사형 호위"; break;
+                    case 2: mydesc = "당문 출격"; break;
+                }
+                id = $"동서무림맹 당문 내 결정({mydesc})"; break;
+            case "西武林盟戰役人數": // ID: M80012
+                id = "서무림맹 전역 인원수"; break;
+            case "東武林盟戰役人數": // ID: M80013
+                id = "동무림맹 전역 인원수"; break;
+            case "錦香宮失望": // ID: M80014
+                id = "금향궁 실망"; break;
+            case "發生圍攻唐門": // ID: M80015
+                id = "당문 포위 공격 발생"; break;
+            case "圍攻唐門弟子出走結果\r": // ID: M80016
+                //id = "당문 포위 공격 시 제자 이탈 결과\\r\\n1. 아무도 떠나지 않음\\r\\n2. 일부 떠남\\r\\n3. 대부분 떠남\\r\\n4. 모두 떠남"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "아무도 떠나지 않음"; break;
+                    case 2: mydesc = "일부 떠남"; break;
+                    case 3: mydesc = "대부분 떠남"; break;
+                }
+                id = $"당문 포위 공격 시 제자 이탈 결과({mydesc})"; break;
+            case "武林盟的消耗\r": // ID: M80017
+                //id = "무림맹의 소모\\r\\n1. 경미한 손실\\r\\n2. 심각한 손실\\r\\n3. 괴멸적 타격"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "경미한 손실"; break;
+                    case 2: mydesc = "심각한 손실"; break;
+                    case 3: mydesc = "괴멸적 타격"; break;
+                }
+                id = $"무림맹의 소모({mydesc})"; break;
+            case "小蘭VS向無憂": // ID: M80018
+                id = "소란 VS 상무우"; break;
+            case "龍湘VS向無憂": // ID: M80019
+                id = "용상 VS 상무우"; break;
+            case "葉雲裳勸退向無憂": // ID: M80020
+                id = "엽운상, 상무우 설득하여 물러나게 함"; break;
+            case "向無憂戰三師兄": // ID: M80021
+                id = "상무우, 삼사형과 대결"; break;
+            case "上官隼敗": // ID: M80022
+                id = "상관준 패배"; break;
+            case "已知山上情況": // ID: M80023
+                id = "산 위 상황을 알고 있음"; break;
+            case "小蘭VS上官隼": // ID: M80024
+                id = "소란 VS 상관준"; break;
+            case "龍湘VS上官隼": // ID: M80025
+                id = "용상 VS 상관준"; break;
+            case "小師妹VS上官隼": // ID: M80026
+                id = "소사매 VS 상관준"; break;
+            case "南宮深敗": // ID: M80027
+                id = "남궁심 패배"; break;
+            case "唐門大勢已去": // ID: M80028
+                id = "당문의 대세는 이미 기욺"; break;
+            case "龍湘覺醒": // ID: M80029
+                id = "용상 각성"; break;
+            case "三師兄重傷": // ID: M80030
+                id = "삼사형 중상"; break;
+            case "大師兄歸來": // ID: M80031
+                id = "대사형 귀환"; break;
+            case "瑞笙來訪 大俠的意思": // ID: M80032
+                id = "서생 방문, 대협의 뜻"; break;
+            case "武林群俠投降": // ID: M80033
+                id = "무림 군협 항복"; break;
+            case "尋找龍湘": // ID: M80034
+                id = "용상 찾기"; break;
+            case "尋找小蘭": // ID: M80035
+                id = "소란 찾기"; break;
+            case "大師兄復活的原因": // ID: M80036
+                id = "대사형 부활 원인"; break;
+            case "大師兄你是怎麼回事": // ID: M80037
+                id = "대사형 당신은 어떻게 된 겁니까"; break;
+            case "瑞笙來訪時把瑞笙趕走": // ID: M80038
+                id = "서생 방문 시 서생을 쫓아냄"; break;
+            case "丹霞子退隱": // ID: M80039
+                id = "단하자 은퇴"; break;
+            case "關心小師妹": // ID: M80040
+                id = "소사매 걱정하기"; break;
+            case "進入最後決戰": // ID: M80041
+                id = "최종 결전 진입"; break;
+            case "捅死瑞笙": // ID: M80042
+                id = "서생을 찔러 죽임"; break;
+            case "西武林盟 丐幫 馬富貴": // ID: M81000
+                id = "서무림맹 개방 마부귀"; break;
+            case "西武林盟 丐幫 ": // ID: M81001
+                id = "서무림맹 개방 "; break;
+            case "西武林盟 青城 鄒博": // ID: M81002
+                id = "서무림맹 청성 추박"; break;
+            case "西武林盟 青城 部分": // ID: M81003
+                id = "서무림맹 청성 일부"; break;
+            case "西武林盟 峨嵋派": // ID: M81004
+                id = "서무림맹 아미파"; break;
+            case "西武林盟 嵩山十八銅人": // ID: M81005
+                id = "서무림맹 숭산 십팔동인"; break;
+            case "西武林盟 錦香宮": // ID: M81006
+                id = "서무림맹 금향궁"; break;
+            case "連環火箭": // ID: M81007
+                id = "연환화전"; break;
+            case "滄幫的背叛": // ID: M81008
+                id = "창방의 배신"; break;
+            case "四師兄的陰損伎倆": // ID: M81009
+                id = "사사형의 음흉한 계략"; break;
+            case "鄒博": // ID: M81010
+                id = "추박"; break;
+            case "畫中仙": // ID: M81011
+                id = "화중선"; break;
+            case "小梅 守護唐門": // ID: M81012
+                id = "소매 당문 수호"; break;
+            case "東武林盟 丐幫 馬富貴": // ID: M82000
+                id = "동무림맹 개방 마부귀"; break;
+            case "東武林盟 丐幫 ": // ID: M82001
+                id = "동무림맹 개방 "; break;
+            case "東武林盟 南宮世家": // ID: M82002
+                id = "동무림맹 남궁세가"; break;
+            case "東武林盟 上官世家": // ID: M82003
+                id = "동무림맹 상관세가"; break;
+            case "東武林盟 全真派": // ID: M82004
+                id = "동무림맹 전진파"; break;
+            case "東武林盟 崆峒派 金烏上人": // ID: M82005
+                id = "동무림맹 공동파 금오상인"; break;
+            case "東武林盟 崆峒派": // ID: M82006
+                id = "동무림맹 공동파"; break;
+            case "東武林盟 嵩山派": // ID: M82007
+                id = "동무림맹 숭산파"; break;
+            case "東武林盟 點蒼派": // ID: M82008
+                id = "동무림맹 점창파"; break;
+            case "東武林盟 錦香宮": // ID: M82009
+                id = "동무림맹 금향궁"; break;
+            case "已贖回外堡": // ID: N00001
+                id = "외성 되찾음"; break;
+            case "已贖回練功塔": // ID: N00002
+                id = "연공탑 되찾음"; break;
+            case "二週目": // ID: NewGamePlus
+                id = "2회차"; break;
+            case "被關次數": // ID: Prison_01
+                id = "감금된 횟수"; break;
+            case "序章旗標\\n": // ID: Prologue
+                id = "서장 플래그\\n"; break;
+            case "完成支線任務-反間諜": // ID: S0002
+                id = "서브 임무 완료 - 반간첩"; break;
+            case "煎藥保存成敗": // ID: S0002_01
+                id = "약 달이기 보존 성공/실패"; break;
+            case "觸發稻草人支線": // ID: S0014_01
+                id = "허수아비 서브퀘스트 발동"; break;
+            case "拜夏侯蘭為師": // ID: S0014_02
+                id = "하후란을 스승으로 모심"; break;
+            case "煉丹房支線成功": // ID: S0015_01 (및 S0016_01, S8000)
+                id = "연단방 서브퀘스트 성공"; break;
+            case "觸發龍之憂鬱": // ID: S0019_01 (및 S0022_01)
+                id = "용의 우울 발동"; break;
+            case "觸發勸離事件": // ID: S0501_01
+                id = "이탈 권유 사건 발동"; break;
+            case "帳務先生": // ID: S2001_01
+                id = "회계 선생"; break;
+            case "觸發上官螢在唐門支線": // ID: S2002_01
+                id = "상관형 당문 체류 서브퀘스트 발동"; break;
+            case "絕世雞腿事件": // ID: S2003_01
+                id = "절세 닭다리 사건"; break;
+            case "開啟絕世雞腿完結篇": // ID: S2003_02
+                id = "절세 닭다리 완결편 활성화"; break;
+            case "已觸發霸凌1": // ID: S8400
+                id = "괴롭힘1 이미 발동됨"; break;
+            case "已觸發偷懶怪1": // ID: S9001
+                id = "게으름뱅이1 이미 발동됨"; break;
+            case "已觸發同門關懷": // ID: S9100
+                id = "동문 관심 이미 발동됨"; break;
+            case "是否下雨": // ID: S9200
+                id = "비가 오는지 여부"; break;
+            case "支持肩甲狀態 ": // ID: S9904_01
+                    switch (myvalue)
+                    {
+                        case 0: mydesc = "알수없음"; break;
+                        case 1: mydesc = "지지"; break;
+                        case 2: mydesc = "반대"; break;
+                    }
+                    id = $"견갑 지지 상태({mydesc})"; break;
+            case "大師兄談論南宮世家": // ID: S9904_02
+                id = "대사형 남궁세가에 대해 언급"; break;
+            case "是否觸發通緝葉雲舟": // ID: S9907_01
+                id = "엽운주 현상수배 발동 여부"; break;
+            case "通用數值 - 信心": // ID: T0001
+                id = "공통 수치 - 신심"; break;
+            case "通用數值 - 下一回合減少行動回合數": // ID: T0002
+                id = "공통 수치 - 다음 턴 행동 턴 수 감소"; break;
+            case "段考難度": // ID: T0003
+                id = "단련 시험 난이도"; break;
+            case "決鬥泛用事件旗標1": // ID: TC0001 (및 TC0002 ~ TC0010)
+                id = "결투 범용 사건 플래그1"; break;
+            case "弟子房四師兄閒聊": // ID: Talk_Brother4 (및 Talk_Brother4_00)
+                id = "제자방 사사형 잡담"; break;
+            case "唐芳歸來": // ID: E12106
+                id = "당방 귀환"; break; // Character_kr.txt에 '당방'은 없으나, ItemMisc_kr.txt에 '당방(唐芳)의 누이가 발명한~' 언급 있음.
+            case "破廟 資訊量": // ID: M20033
+                id = "폐허 사원 정보량"; break;
+            case "與唐大鯨決鬥後續\r": // ID: M20035
+                                //id = "당대경과 결투 후\\r\\n1. 승리\\r\\n2. 이사형 엄호\\r\\n3. 엽운상 엄호"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "승리"; break;
+                    case 2: mydesc = "이사형 엄호"; break;
+                    case 3: mydesc = "엽운상 엄호"; break;
+                }
+                id = $"당대경과 결투 후({mydesc})"; break;
+            case "離家出走時三師兄有下山送錢": // ID: M20036
+                id = "가출 시 삼사형이 산을 내려와 돈을 줌"; break;
+            case "你回程的遭遇\r": // ID: M20037
+                            //id = "당신의 귀환길 조우\\r\\n1. 멧돼지\\r\\n2. 산적\\r\\n3. 소사매"; break;
+                switch (myvalue)
+                {
+                    case 1: mydesc = "멧돼지"; break;
+                    case 2: mydesc = "산적"; break;
+                    case 3: mydesc = "소사매"; break;
+                }
+                id = $"당신의 귀환길 조우({mydesc})"; break;
+            case "被葉雲裳張貼通緝令": // ID: M20038
+                id = "엽운상에 의해 현상수배됨"; break;
+            case "青城留學 累積功勳": // ID: M30040
+                id = "청성 유학 중 공훈 누적"; break;
+            case "青城留學 散步": // ID: M30041
+                id = "청성 유학 중 산책"; break;
+            case "青城留學 觸發舊識": // ID: M30043
+                id = "청성 유학 중 옛 지인 조우 발동"; break;
+            case "青城留學 觸發嘉勉": // ID: M30044
+                id = "청성 유학 중 격려 발동"; break;
+            case "青城留學 勒索過青城弟子": // ID: M30045
+                id = "청성 유학 중 청성 제자 갈취한 적 있음"; break;
+            case "青城留學 觸發鬼神之相": // ID: M30046
+                id = "청성 유학 중 귀신의 상 발동"; break;
+            case "青城留學 觸發庸才": // ID: M30048
+                id = "청성 유학 중 평범한 재능 발동"; break;
+            case "青城留學 葉雲裳回唐門": // ID: M30053
+                id = "청성 유학 중 엽운상 당문 복귀"; break;
+            case "青城留學 申屠龍散步遭遇襲擊": // ID: M30054
+                id = "청성 유학 중 신도룡 산책 시 습격 조우"; break;
+            case "青城留學 散步遭遇申屠龍機率上升": // ID: M30055
+                id = "청성 유학 중 산책 시 신도룡 조우 확률 상승"; break;
+            case "金烏上人成為掌派人": // ID: M50023
+                id = "금오상인 장문인 됨"; break;
+
+            // DevNote가 없거나 위 case에 해당하지 않는 ID에 대한 처리 (ID 기준 switch)
+            default: // 이 switch문의 default는 DevNote를 그대로 사용하는 것이었음
+                id = $"{mydevnote}(미번역)";
+            break;
+            }
+        if (id == "") {
+            return null;
+        };
+        return id;
+        }
+    }
+}

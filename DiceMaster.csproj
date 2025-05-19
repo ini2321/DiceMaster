@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\hyeon\Downloads\dnSpy-net-win64\DiceMaster.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D590DD12-2F56-4698-A76E-A415D9BEFF83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>DiceMaster</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>DiceMaster</RootNamespace>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CharacterTranslations.cs" />
+    <Compile Include="FlagTranslations.cs" />
+    <Compile Include="LocationTranslations.cs" />
+    <Compile Include="PlayerinfoTranslations.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+    <Compile Include="DicePlugin.cs" />
+    <Compile Include="DebugPatch.cs" />
+    <Compile Include="DicePatch.cs" />
+    <Compile Include="OptionInfoPatch.cs" />
+    <Compile Include="AssetBundleHelper.cs" />
+    <Compile Include="DataHelper.cs" />
+    <Compile Include="PositionEventCache.cs" />
+    <Compile Include="ReflectionExtensions.cs" />
+    <Compile Include="RichText.cs" />
+    <Compile Include="MyPluginInfo.cs" />
+    <Compile Include="LuaParse\ActionType.cs" />
+    <Compile Include="LuaParse\Action.cs" />
+    <Compile Include="LuaParse\LuaParser.cs" />
+    <Compile Include="Config\ConfigElement`1.cs" />
+    <Compile Include="Config\ConfigManager.cs" />
+    <Compile Include="Config\IConfigElement.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets.mortaldice" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\0Harmony.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\0Harmony20.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\AssetRipper.Primitives.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\BepInEx.Core.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\BepInEx.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\BepInEx.Harmony.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\BepInEx.Preloader.Core.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\BepInEx.Preloader.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\BepInEx.Unity.Common.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\BepInEx.Unity.Mono.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\BepInEx.Unity.Mono.Preloader.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\HarmonyXInterop.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\Mono.Cecil.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\Mono.Cecil.Mdb.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\Mono.Cecil.Pdb.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\Mono.Cecil.Rocks.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\MonoMod.RuntimeDetour.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\MonoMod.Utils.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\Newtonsoft.Json.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\SemanticVersioning.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\XUnity.Common.dll" />
+    <Analyzer Include="..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\plugins\FunctionalPlugin_Binarizer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Core">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\BepInEx.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Unity.Mono">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\BepInEx\core\BepInEx.Unity.Mono.dll</HintPath>
+    </Reference>
+    <Reference Include="Fungus">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\Fungus.dll</HintPath>
+    </Reference>
+    <Reference Include="Mortal.Core">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\Mortal.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mortal.Free">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\Mortal.Free.dll</HintPath>
+    </Reference>
+    <Reference Include="Mortal.Story">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\Mortal.Story.dll</HintPath>
+    </Reference>
+    <Reference Include="OBB.Framework">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\OBB.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\Mygames\LegendOfMortal\Mortal_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
